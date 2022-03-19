@@ -6,6 +6,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from time import sleep
 
 from ShowModule.showDriver import ShowDriver
+from ShowModule.soudDriver import SoundDriver
 
 
 class ShowHandler(BaseHTTPRequestHandler):
@@ -58,7 +59,7 @@ class Timer(threading.Thread):
     def send_clock(self):
         while True:
             time_str = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-            self.show_sys.deal_message('time', time_str)
+            self.show_sys.deal_message('time', time_str, caller=1)
             sleep(1)
 
     def run(self):
@@ -77,6 +78,7 @@ class ShowSys:
         for item in self.mode2index:
             self.string_map.update({item: ''})
         self.show_driver = ShowDriver()
+        self.sound_driver = SoundDriver()
         self.timer = Timer(self)
         self.handler = partial(ShowHandler, self)
         server_address = ('', 9999)
@@ -92,10 +94,13 @@ class ShowSys:
         show_string = self.string_map.get(cur_state)
         self.show_driver.show(show_string)
 
-    def deal_message(self, me_type, string):
+    def deal_message(self, me_type, string, caller=0):
         self.update_string_map(me_type, string)
         self.change_mode(me_type)
-        self.show()
+        if self.mode != 1 or (self.mode == 1 and caller == 0):
+            self.show()
+        if self.mode != 0 and caller == 0:
+            self.sound_driver.show(string)
 
     def action_to_situation(self, action):
         return action + '_s'
