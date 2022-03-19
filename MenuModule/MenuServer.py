@@ -106,6 +106,9 @@ class MenuSys:
         handler = partial(MenuHandler, self)
         self.httpd = HTTPServer(server_address, handler)
         self.http_thread = HTTPServerThread(httpd=self.httpd)
+        self.time_stamp = {'switch_left': time.time(),
+                           'switch_right': time.time(),
+                           'shut_down': time.time()}
 
     def search_recipe(self, goal):
         content = self.menu_loader.search_recipe(goal)
@@ -125,14 +128,26 @@ class MenuSys:
         except:
             return
 
+    def check_time(self, fun):
+        fun_time = self.time_stamp.get(fun)
+        cur_time = time.time()
+        if cur_time - fun_time <= 4:
+            return False
+        else:
+            self.time_stamp.update({fun: cur_time})
+            return True
+
     def switch_right(self):
-        self.menu_display.switch_right()
+        if self.check_time('switch_right'):
+            self.menu_display.switch_right()
 
     def switch_left(self):
-        self.menu_display.switch_left()
+        if self.check_time('switch_left'):
+            self.menu_display.switch_left()
 
     def shut_down(self):
-        self.menu_display.shut_down()
+        if self.check_time('shut_time'):
+            self.menu_display.shut_down()
 
     def run(self):
         self.http_thread.start()
@@ -145,28 +160,21 @@ class MenuHandler(BaseHTTPRequestHandler):
                         'switch_right': self.menu_sys.switch_right,
                         'shut_down': self.menu_sys.shut_down,
                         'search': self.menu_sys.search_recipe}
-        self.time_stamp = {'switch_left': time.time(),
-                           'switch_right': time.time(),
-                           'shut_down': time.time()}
         super().__init__(*args, **kargs)
 
     def do_fun(self, fun):
-        cur_time = time.time()
         c_fun = self.fun_map.get(fun)
         if c_fun is None:
             return False
-        if cur_time - self.time_stamp.get(fun) <= 4:
-            return False
-        else:
-            self.time_stamp.update({fun: time.time()})
-            c_fun()
-            return True
+        c_fun()
+        return True
 
     def handle_params(self, params):
         if params.get('fun'):
             return self.do_fun(params.get('fun'))
         elif params.get('search'):
-            return self.menu_sys.search_recipe(params.get('search'))
+            name = urllib.parse.unquote(params.get('search'))
+            return self.menu_sys.search_recipe(name)
         else:
             return False
 
