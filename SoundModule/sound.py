@@ -5,6 +5,7 @@ import pyaudio
 import wave
 import re
 import os
+import requests
 import time
 
 APP_ID = '25770534'
@@ -71,6 +72,9 @@ def run_video():
     })
     word = text.get('result')[0][:-1]
     print(word)
+    url = "http://127.0.0.1:9997/"
+    params1 = {'search': word}
+    res = requests.get(url=url, params=params1)
     return word
 
 
