@@ -134,16 +134,19 @@ class MenuSys:
         if cur_time - fun_time <= 4:
             return False
         else:
-            self.time_stamp.update({fun: cur_time})
             return True
 
     def switch_right(self):
         if self.check_time('switch_right'):
             self.menu_display.switch_right()
+            self.time_stamp.update({'switch_right': time.time()})
+            self.time_stamp.update({'switch_left': time.time()})
 
     def switch_left(self):
         if self.check_time('switch_left'):
             self.menu_display.switch_left()
+            self.time_stamp.update({'switch_right': time.time()})
+            self.time_stamp.update({'switch_left': time.time()})
 
     def shut_down(self):
         if self.check_time('shut_time'):
