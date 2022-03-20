@@ -27,12 +27,14 @@ class RecipeDisplay:
     def switch_right(self):
         if self.cursor != self.max_len - 1:
             self.cursor += 1
-        self.send_message(self.content[self.cursor])
+        if len(self.content) != 0:
+            self.send_message(self.content[self.cursor])
 
     def switch_left(self):
         if self.cursor != 0:
             self.cursor -= 1
-        self.send_message(self.content[self.cursor])
+        if len(self.content) != 0:
+            self.send_message(self.content[self.cursor])
 
     def send_message(self, stream):
         url = "http://127.0.0.1:9999/"
@@ -43,6 +45,8 @@ class RecipeDisplay:
             return
 
     def shut_down(self):
+        if len(self.content) == 0:
+            return
         self.clear_up()
         url = "http://127.0.0.1:9999/"
         params = {"clear": '菜谱结束'}
