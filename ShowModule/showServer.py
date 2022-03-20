@@ -5,8 +5,8 @@ from functools import partial
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from time import sleep
 
-from ShowModule.showDriver import ShowDriver
-from ShowModule.soudDriver import SoundDriver
+from showDriver import ShowDriver
+from soudDriver import SoundDriver
 
 
 class ShowHandler(BaseHTTPRequestHandler):

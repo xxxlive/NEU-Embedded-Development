@@ -122,7 +122,7 @@ class MenuSys:
 
     def warning_message(self, content):
         url = "http://127.0.0.1:9999/"
-        params = {"content": content.encode('UTF-8')}
+        params = {"clear": content.encode('UTF-8')}
         try:
             requests.get(url=url, params=params)
         except:
@@ -149,8 +149,9 @@ class MenuSys:
             self.time_stamp.update({'switch_left': time.time()})
 
     def shut_down(self):
-        if self.check_time('shut_time'):
+        if self.check_time('shut_down'):
             self.menu_display.shut_down()
+            self.time_stamp.update({'shut_down': time.time()})
 
     def run(self):
         self.http_thread.start()
