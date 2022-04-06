@@ -8,14 +8,21 @@ def main():
     GPIO.setup(38, GPIO.IN)
     while True:
         up = GPIO.input(38)
+        print(up)
         if up == 1:
             url2 = "http://127.0.0.1:9999/"
             params3 = {'clear': '我在'}
             url1 = "http://127.0.0.1:10001/"
             params = {"video": "ON"}
-            requests.get(url=url2, params=params3)
+            try:
+               requests.get(url=url2, params=params3)
+            except:
+               pass
             sleep(0.5)
-            requests.get(url=url1, params=params)
+            try:
+               requests.get(url=url1, params=params)
+            except:
+               pass
             sleep(2)
         sleep(1)
 

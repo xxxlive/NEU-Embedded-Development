@@ -78,7 +78,7 @@ class ShowSys:
         for item in self.mode2index:
             self.string_map.update({item: ''})
         self.show_driver = ShowDriver()
-        self.sound_driver = SoundDriver()
+#        self.sound_driver = SoundDriver(string) 
         self.timer = Timer(self)
         self.handler = partial(ShowHandler, self)
         server_address = ('', 9999)
@@ -100,7 +100,8 @@ class ShowSys:
         if self.mode != 1 or (self.mode == 1 and caller == 0):
             self.show()
         if self.mode != 0 and caller == 0:
-            self.sound_driver.show(string)
+            sound_driver = SoundDriver(string)
+            sound_driver.start()
 
     def action_to_situation(self, action):
         return action + '_s'
@@ -112,6 +113,11 @@ class ShowSys:
         future_state = self.update_map[self.mode].get(action)
         if future_state:
             self.mode = self.mode2index.get(future_state)
+            if self.mode == 2:
+                print('fuck you')
+                sound_driver = SoundDriver('hello')
+                sound_driver.start()
+        
 
 
 def main():

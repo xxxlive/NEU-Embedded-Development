@@ -3,4 +3,4 @@ class ShowDriver:
         pass
 
     def show(self, string):
-        print(string)
+        print(string.replace('+', ' '))

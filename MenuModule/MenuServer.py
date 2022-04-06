@@ -4,7 +4,7 @@ import time
 import urllib.parse
 from functools import partial
 from http.server import BaseHTTPRequestHandler, HTTPServer
-
+from MenuLoader import MenuLoader
 import requests
 
 
@@ -59,47 +59,6 @@ class RecipeDisplay:
         self.content = []
         self.cursor = 0
         self.max_len = 0
-
-
-class MenuLoader:
-    def __init__(self):
-        self.menu_content = []
-        self.load_menu()
-
-    # 读一个文件 返回一个包含文件句子的列表
-    def read_file_lines(self, goal):
-        pwd = os.getcwd()
-        cur_path = os.path.join(pwd, '../menu', goal)
-        res = []
-        with open(cur_path, 'r', encoding='UTF-8') as f:
-            while True:
-                tem = f.readline()
-                if tem == '':
-                    break
-                else:
-                    tem = tem.replace('\n', '')
-                    res.append(tem)
-        return res
-
-    # 找一个食谱，找到返回内容列表，否则返回None
-    def search_recipe(self, goal):
-        for item in self.menu_content:
-            if goal in item:
-                reader = self.read_file_lines(item)
-                return reader
-        return None
-
-    # 测试接口
-    def load_recipe(self, recipe_goal):
-        recipe = self.search_recipe(recipe_goal)
-        print(recipe)
-
-    def load_menu(self):
-        pwd = os.getcwd()
-        cur_path = os.path.join(pwd, '../menu')
-        content = os.listdir(cur_path)
-        for item in content:
-            self.menu_content.append(item)
 
 
 class MenuSys:

@@ -1,0 +1,506 @@
+/home/nvidia/.local/lib/python3.6/site-packages/torchvision-0.11.1-py3.6-linux-aarch64.egg/torchvision/transforms/transforms.py:318: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+/home/nvidia/.local/lib/python3.6/site-packages/torchvision-0.11.1-py3.6-linux-aarch64.egg/torchvision/transforms/transforms.py:288: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  "Argument interpolation should be of type InterpolationMode instead of int. "
+Open camera...
+<VideoCapture 0x7f2cd5dcf0>
+Build transformer...
+Build Executor...
+just load
+cucuuucucucuuccuucucuc
+Ready!
+0 No gesture
+1 No gesture
+3 No gesture
+5 No gesture
+7 No gesture
+9 No gesture
+11 No gesture
+13 No gesture
+15 No gesture
+17 No gesture
+19 No gesture
+21 No gesture
+23 No gesture
+25 No gesture
+27 No gesture
+29 No gesture
+31 No gesture
+33 No gesture
+35 No gesture
+37 No gesture
+39 No gesture
+41 No gesture
+43 No gesture
+45 No gesture
+47 No gesture
+49 No gesture
+51 No gesture
+53 No gesture
+55 No gesture
+57 No gesture
+59 No gesture
+61 No gesture
+63 No gesture
+65 No gesture
+67 No gesture
+69 No gesture
+71 No gesture
+73 No gesture
+75 No gesture
+77 No gesture
+79 No gesture
+81 No gesture
+83 No gesture
+85 No gesture
+87 No gesture
+89 No gesture
+91 No gesture
+93 No gesture
+95 No gesture
+97 No gesture
+99 No gesture
+101 No gesture
+103 No gesture
+105 No gesture
+107 No gesture
+109 No gesture
+111 No gesture
+113 No gesture
+115 No gesture
+117 No gesture
+119 No gesture
+121 No gesture
+123 No gesture
+125 No gesture
+127 No gesture
+129 No gesture
+131 No gesture
+133 No gesture
+135 No gesture
+137 No gesture
+139 No gesture
+141 No gesture
+143 No gesture
+145 No gesture
+147 No gesture
+149 No gesture
+151 No gesture
+153 No gesture
+155 No gesture
+157 No gesture
+159 No gesture
+161 No gesture
+163 No gesture
+165 No gesture
+167 No gesture
+169 No gesture
+171 No gesture
+173 No gesture
+175 No gesture
+177 No gesture
+179 No gesture
+181 No gesture
+183 No gesture
+185 No gesture
+187 No gesture
+189 No gesture
+191 Swiping Left
+193 Swiping Left
+195 Swiping Left
+197 Swiping Left
+199 Swiping Left
+201 Swiping Left
+203 Swiping Left
+205 Swiping Right
+207 Swiping Right
+209 Swiping Left
+211 Swiping Left
+213 Swiping Left
+215 Swiping Left
+217 Swiping Right
+219 Swiping Right
+221 Swiping Right
+223 Swiping Left
+225 Swiping Left
+227 Swiping Left
+229 Swiping Left
+231 Swiping Left
+233 No gesture
+235 No gesture
+237 No gesture
+239 No gesture
+241 No gesture
+243 No gesture
+245 No gesture
+247 No gesture
+249 Swiping Left
+251 Swiping Left
+253 Swiping Left
+255 Swiping Left
+257 Swiping Left
+259 Swiping Left
+261 Swiping Left
+263 Swiping Left
+265 Swiping Right
+267 Swiping Right
+269 Swiping Right
+271 Swiping Right
+273 Swiping Right
+275 Swiping Right
+277 Swiping Right
+279 Swiping Right
+281 Swiping Right
+283 Swiping Right
+285 Swiping Right
+287 Swiping Right
+289 Swiping Right
+291 Swiping Left
+293 Swiping Left
+295 Swiping Right
+297 Swiping Right
+299 Swiping Right
+301 Swiping Right
+303 Swiping Right
+305 Swiping Right
+307 Swiping Right
+309 Swiping Right
+311 Swiping Right
+313 Swiping Right
+315 Swiping Right
+317 Swiping Right
+319 Swiping Right
+321 No gesture
+323 No gesture
+325 No gesture
+327 No gesture
+329 No gesture
+331 No gesture
+333 No gesture
+335 No gesture
+337 No gesture
+339 No gesture
+341 No gesture
+343 No gesture
+345 No gesture
+347 No gesture
+349 No gesture
+351 No gesture
+353 No gesture
+355 No gesture
+357 No gesture
+359 No gesture
+361 No gesture
+363 No gesture
+365 No gesture
+367 No gesture
+369 No gesture
+371 No gesture
+373 No gesture
+375 No gesture
+377 No gesture
+379 No gesture
+381 No gesture
+383 No gesture
+385 No gesture
+387 No gesture
+389 No gesture
+391 No gesture
+393 No gesture
+395 No gesture
+397 No gesture
+399 No gesture
+401 No gesture
+403 No gesture
+405 No gesture
+407 No gesture
+409 No gesture
+411 No gesture
+413 No gesture
+415 No gesture
+417 No gesture
+419 No gesture
+421 No gesture
+423 No gesture
+425 No gesture
+427 No gesture
+429 No gesture
+431 No gesture
+433 No gesture
+435 No gesture
+437 No gesture
+439 No gesture
+[ WARN:0@15.005] global /io/opencv/modules/videoio/src/cap_v4l.cpp (889) open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+/home/nvidia/.local/lib/python3.6/site-packages/torchvision-0.11.1-py3.6-linux-aarch64.egg/torchvision/transforms/transforms.py:318: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+/home/nvidia/.local/lib/python3.6/site-packages/torchvision-0.11.1-py3.6-linux-aarch64.egg/torchvision/transforms/transforms.py:288: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  "Argument interpolation should be of type InterpolationMode instead of int. "
+Open camera...
+<VideoCapture 0x7f084568f0>
+Build transformer...
+Build Executor...
+just load
+cucuuucucucuuccuucucuc
+Ready!
+Traceback (most recent call last):
+
+  File "main.py", line 400, in <module>
+    main()
+
+  File "main.py", line 317, in main
+    img_tran = transform([Image.fromarray(img).convert('RGB')])
+
+  File "/home/nvidia/.local/lib/python3.6/site-packages/Pillow-9.0.1-py3.6-linux-aarch64.egg/PIL/Image.py", line 2803, in fromarray
+    arr = obj.__array_interface__
+
+AttributeError: 'NoneType' object has no attribute '__array_interface__'
+
+/home/nvidia/.local/lib/python3.6/site-packages/torchvision-0.11.1-py3.6-linux-aarch64.egg/torchvision/transforms/transforms.py:318: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+/home/nvidia/.local/lib/python3.6/site-packages/torchvision-0.11.1-py3.6-linux-aarch64.egg/torchvision/transforms/transforms.py:288: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  "Argument interpolation should be of type InterpolationMode instead of int. "
+Open camera...
+<VideoCapture 0x7f2b4dcbf0>
+Build transformer...
+Build Executor...
+just load
+cucuuucucucuuccuucucuc
+Ready!
+0 No gesture
+1 No gesture
+3 No gesture
+5 No gesture
+7 No gesture
+9 No gesture
+11 No gesture
+13 No gesture
+15 No gesture
+17 No gesture
+19 No gesture
+21 No gesture
+23 No gesture
+25 No gesture
+27 No gesture
+29 No gesture
+31 No gesture
+33 No gesture
+35 No gesture
+37 No gesture
+39 No gesture
+41 No gesture
+43 No gesture
+45 No gesture
+47 No gesture
+49 No gesture
+51 No gesture
+53 No gesture
+55 No gesture
+57 No gesture
+59 No gesture
+61 No gesture
+63 No gesture
+65 No gesture
+67 No gesture
+69 No gesture
+71 No gesture
+73 No gesture
+75 No gesture
+77 No gesture
+79 No gesture
+81 No gesture
+83 No gesture
+85 No gesture
+87 No gesture
+89 No gesture
+91 No gesture
+93 No gesture
+95 No gesture
+97 No gesture
+99 No gesture
+101 No gesture
+103 No gesture
+105 No gesture
+107 No gesture
+109 No gesture
+111 No gesture
+113 No gesture
+115 No gesture
+117 No gesture
+119 No gesture
+121 No gesture
+123 No gesture
+125 No gesture
+127 No gesture
+129 No gesture
+131 No gesture
+133 No gesture
+135 No gesture
+137 No gesture
+139 No gesture
+141 No gesture
+143 No gesture
+145 No gesture
+147 No gesture
+149 No gesture
+151 No gesture
+153 No gesture
+155 No gesture
+157 No gesture
+159 No gesture
+161 No gesture
+163 No gesture
+165 No gesture
+167 No gesture
+169 No gesture
+171 No gesture
+173 No gesture
+175 No gesture
+177 No gesture
+179 No gesture
+181 No gesture
+183 No gesture
+185 No gesture
+187 No gesture
+189 No gesture
+191 No gesture
+193 No gesture
+195 No gesture
+197 No gesture
+199 No gesture
+201 No gesture
+203 No gesture
+205 No gesture
+207 No gesture
+209 No gesture
+211 No gesture
+213 No gesture
+215 No gesture
+217 No gesture
+219 No gesture
+221 Swiping Right
+223 Swiping Right
+225 Swiping Left
+227 Swiping Left
+229 Swiping Left
+231 Swiping Left
+233 Swiping Left
+235 Swiping Left
+237 Swiping Left
+239 Swiping Left
+241 Swiping Left
+243 Swiping Left
+245 Swiping Left
+247 Swiping Right
+249 Swiping Right
+251 Swiping Right
+253 Swiping Right
+255 Swiping Right
+257 Swiping Right
+259 Swiping Left
+261 Swiping Left
+263 Swiping Left
+265 Swiping Left
+267 Swiping Left
+269 Swiping Left
+271 Swiping Left
+273 No gesture
+275 No gesture
+277 No gesture
+279 No gesture
+281 No gesture
+283 No gesture
+285 No gesture
+287 No gesture
+289 No gesture
+291 No gesture
+293 No gesture
+295 No gesture
+297 No gesture
+299 No gesture
+301 No gesture
+303 No gesture
+305 No gesture
+307 No gesture
+309 No gesture
+311 No gesture
+313 No gesture
+315 No gesture
+317 No gesture
+319 No gesture
+321 No gesture
+323 No gesture
+325 No gesture
+  File "main.py", line 351
+    elif: idx==17:
+        ^
+SyntaxError: invalid syntax
+[ WARN:0@13.895] global /io/opencv/modules/videoio/src/cap_v4l.cpp (889) open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+/home/nvidia/.local/lib/python3.6/site-packages/torchvision-0.11.1-py3.6-linux-aarch64.egg/torchvision/transforms/transforms.py:318: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+/home/nvidia/.local/lib/python3.6/site-packages/torchvision-0.11.1-py3.6-linux-aarch64.egg/torchvision/transforms/transforms.py:288: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  "Argument interpolation should be of type InterpolationMode instead of int. "
+Open camera...
+<VideoCapture 0x7f3c87cd50>
+Build transformer...
+Build Executor...
+just load
+cucuuucucucuuccuucucuc
+Ready!
+Traceback (most recent call last):
+
+  File "main.py", line 408, in <module>
+    main()
+
+  File "main.py", line 317, in main
+    img_tran = transform([Image.fromarray(img).convert('RGB')])
+
+  File "/home/nvidia/.local/lib/python3.6/site-packages/Pillow-9.0.1-py3.6-linux-aarch64.egg/PIL/Image.py", line 2803, in fromarray
+    arr = obj.__array_interface__
+
+AttributeError: 'NoneType' object has no attribute '__array_interface__'
+
+[ WARN:0@13.527] global /io/opencv/modules/videoio/src/cap_v4l.cpp (889) open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+/home/nvidia/.local/lib/python3.6/site-packages/torchvision-0.11.1-py3.6-linux-aarch64.egg/torchvision/transforms/transforms.py:318: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+/home/nvidia/.local/lib/python3.6/site-packages/torchvision-0.11.1-py3.6-linux-aarch64.egg/torchvision/transforms/transforms.py:288: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  "Argument interpolation should be of type InterpolationMode instead of int. "
+Open camera...
+<VideoCapture 0x7f1ad95690>
+Build transformer...
+Build Executor...
+just load
+cucuuucucucuuccuucucuc
+Ready!
+Traceback (most recent call last):
+
+  File "main.py", line 408, in <module>
+    main()
+
+  File "main.py", line 317, in main
+    img_tran = transform([Image.fromarray(img).convert('RGB')])
+
+  File "/home/nvidia/.local/lib/python3.6/site-packages/Pillow-9.0.1-py3.6-linux-aarch64.egg/PIL/Image.py", line 2803, in fromarray
+    arr = obj.__array_interface__
+
+AttributeError: 'NoneType' object has no attribute '__array_interface__'
+
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'

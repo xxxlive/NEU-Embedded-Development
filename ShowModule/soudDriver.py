@@ -1,6 +1,10 @@
-class SoundDriver:
-    def __init__(self):
-        pass
+import threading
+import os
 
-    def show(self, string):
-        print(string)
+class SoundDriver(threading.Thread):
+    def __init__(self, string):
+        super().__init__()
+        self.string = string
+
+    def run(self):
+        os.system('espeak \"'+self.string.replace('+', ' ').replace('\'', '')+'\" -v zh')
