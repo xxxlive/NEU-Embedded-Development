@@ -13,7 +13,7 @@ def sendMail(message, Subject, sender_show, recipient_show, to_addrs, cc_show=''
     '''
     # 填写真实的发邮件服务器用户名、密码
     user = '1374980762@qq.com'
-    password = 'lxfwowlplhvvfefi'
+    password = ''
     # 邮件内容
     msg = MIMEText(message, 'plain', _charset="utf-8")
     # 邮件主题描述
