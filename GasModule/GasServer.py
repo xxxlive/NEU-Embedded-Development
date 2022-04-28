@@ -5,26 +5,33 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from mimetypes import init
 from pickle import NONE, TRUE
 import threading
-from time import sleep
+from time import sleep, time
 import cv2
 import Jetson.GPIO as GPIO
 import urllib
 import _thread
 
+import EmailModule.Email
+
 
 class GasMonitor(threading.Thread):
     def __init__(self) -> None:
-        super(GasMonitor,self).__init__()
+        super(GasMonitor, self).__init__()
         self.people = False
         self.al = 1
+        self.last_email = 0
         GPIO.setmode(GPIO.BOARD)
         GPIO.setup(40, GPIO.IN)
         GPIO.setup(7, GPIO.OUT, initial=False)
         GPIO.output(7, GPIO.LOW)
 
+    def send_email(self):
+        if time.time() - self.last_email > 3600:
+            EmailModule.Email.main()
+            self.last_email = time.time()
+
     def monitor(self):
         while TRUE:
-            print('sfdsaf')
             self.al = GPIO.input(40)
             print(self.al)
             print(self.people)
@@ -55,9 +62,9 @@ class HTTPServerThread(threading.Thread):
 
 class GasHandler(BaseHTTPRequestHandler):
 
-    def __init__(self,gas_monitor,*args,**kargs):
+    def __init__(self, gas_monitor, *args, **kargs):
         self.gas_monitor = gas_monitor
-        super().__init__(*args,**kargs)
+        super().__init__(*args, **kargs)
 
     def do_GET(self):
         self.send_response(200)
