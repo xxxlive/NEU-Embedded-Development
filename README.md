@@ -22,7 +22,7 @@ Use the following commands:
 Before running the script, please check it out and customize your file path.
 
 '''
-conda create -n yolo --file requirements.txt
+conda create -n yolo --file requirements.txt &
 bash -i setup.sh
 '''
 
